@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movs4Nancy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/avatars/688093425832427624/26ac89db1c46666ba1d6541ebcea5672.png?size=128"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style copy.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <a class="navbar-brand" href="index.html"
+      ><img
+        style="width: 200px;"
+        src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/575/3240988575_3e827d13-62c0-4ec8-9870-6968a415d6e9.png?cb=1593553955"
+    /></a>
+
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html"
+              >MoviesList</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Another rating websites
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.rottentomatoes.com/"
+                >Rotten Tomatoes</a
+              >
+              <a class="dropdown-item" href="https://www.flixster.com/"
+                >Flixter</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.imdb.com/?ref_=nv_home"
+              ></a">imdb</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+          <button style="margin-left: 15px"class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Sign in
+          </button>
+          
+        </form>
+      </div>
+    </nav>
+
+    <div class="back">
+      <div class="container">
+        <div class="bar">
+          <div id="card" id="card1" class="card1" onclick="detail()">
+            <div id="birdbox" class="con1">
+              <p id="movietitle" class="conp1">Bird Box (2018)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('birdbox'))"
+              >
+                X
+              </button>
+              <a href="birdbox.html" class="watchlink">Watch</a>
+              <p id="moviepara" class="con1des">
+                When a mysterious force decimates the world's population, only
+                one thing is certain: if you see it, you take your life. Facing
+                the unknown, Malorie finds love, hope and a new beginning only
+                for it to unravel. Now she must flee with her two children down
+                a treacherous river to the one place left that may offer
+                sanctuary. But to survive, they'll have to undertake the
+                perilous two-day journey blindfolded.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/o2AsIXSh2xo"
+                frameborder="0"
+              ></iframe>
+            </div>
+
+            <p class="p1">horror,thrilling</p>
+          </div>
+          <div id="card" class="card2" onclick="aladdin()">
+            <div id="aladdin" class="con1">
+              <p class="conp1">Aladdin (2019)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('aladdin'))"
+              >
+                X
+              </button>
+              <a href="aladdin.html" class="watchlink">Watch</a>
+              <p class="con1des">
+                A street rat frees a genie from a lamp, granting all of his
+                wishes and transforming himself into a charming prince in order
+                to marry a beautiful princess. But soon, an evil sorcerer
+                becomes hell-bent on securing the lamp for his own sinister
+                purposes.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/foyufD52aog"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <p style="font-size: 0.7vw;" class="p1">Adventure,<br />Comedy</p>
+          </div>
+          <div id="card" class="card3" onclick="joker()">
+            <div id="joker" class="con1">
+              <p class="conp1">Joker (2019)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('joker'))"
+              >
+                X
+              </button>
+              <a href="joker.html" class="watchlink">Watch</a>
+              <p class="con1des">
+                "Joker" centers around the iconic arch nemesis and is an
+                original, standalone fictional story not seen before on the big
+                screen. Phillips' exploration of Arthur Fleck, who is indelibly
+                portrayed by Joaquin Phoenix, is of a man struggling to find his
+                way in Gotham's fracturedsociety. A clown-for-hire by day, he
+                aspires to be a stand-up comic at night...but finds the joke
+                always seems to be on him. Caught in a cyclical existence
+                between apathy and cruelty, Arthur makes one bad decision that
+                brings about a chain reaction of escalating events in this
+                gritty character study.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/zAGVQLHvwOY"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <p class="p1">Action, Crime</p>
+          </div>
+        </div>
+        <div class="bar">
+          <div id="card" class="card4" onclick="BM()">
+            <div id="BM" class="con1">
+              <p id="movietitle" class="conp1">A Beautiful Mind (2001)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('BM'))"
+              >
+                X
+              </button>
+              <a href="BM.html" class="watchlink">Watch</a>
+              <p id="moviepara" class="con1des">
+                A mathematical genius, he made an astonishing discovery early in
+                his career and stood on the brink of international acclaim. But
+                the handsome and arrogant Nash soon found himself on a painful
+                and harrowing journey of self-discovery once he was diagnosed
+                with schizophrenia. After many years of struggle, he eventually
+                triumphed over this tragedy, and finally, late in life, received
+                the Nobel Prize.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/9wZM7CQY130"
+                frameborder="0"
+              ></iframe>
+            </div>
+
+            <p class="p1">Drama, Maths</p>
+          </div>
+          <div id="card" class="card5" onclick="OP()">
+            <div id="onepiece" class="con1">
+              <p class="conp1">One Piece: stampede (2019)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('onepiece'))"
+              >
+                X
+              </button>
+              <a href="onepiece.html" class="watchlink">Watch</a>
+              <p class="con1des">
+                The world's boldest buccaneers set sail for the great Pirate
+                Festival, where the Straw Hats join a mad-dash race to find Gol
+                D. Roger's treasure. There's just one little problem. An old
+                member of Roger's crew has a sinister score to settle. All bets
+                are off when the most iconic pirates of One Piece history band
+                together for a swashbuckling showdown, the likes of which have
+                never been seen!
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/c8HS5ZrMAho"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <p class="p1">Adventure, Action</p>
+          </div>
+          <div id="card" class="card6" onclick="nemo()">
+            <div id="nemo" class="con1">
+              <p class="conp1">Finding Nemo (2003)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('nemo'))"
+              >
+                X
+              </button>
+              <a href="nemo.html" class="watchlink">Watch</a>
+              <p class="con1des">
+                In this stunning underwater adventure, with memorable
+                characters, humor and heartfelt emotion, Finding Nemo follows
+                the comedic and momentous journey of an overly protective
+                clownfish named Marlin and his son Nemo -- who become separated
+                in the Great Barrier Reef when Nemo is unexpectedly taken far
+                from his ocean home and dumped into a fish tank in a dentist's
+                office. Buoyed by the companionship of Dory .
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/zAGVQLHvwOY"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <p class="p1">Animation, Kids</p>
+          </div>
+        </div>
+        <div class="bar">
+          <div id="card" class="card7" onclick="NATM()">
+            <div id="NATM" class="con1">
+              <p id="movietitle" class="conp1">Night at the museum</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('NATM'))"
+              >
+                X
+              </button>
+              <a href="NATM.html" class="watchlink">Watch</a>
+              <p id="moviepara" class="con1des">
+                A newly recruited night security guard at the Museum of Natural
+                History discovers that an ancient curse causes the animals and
+                exhibits on display to come to life and wreak havoc.to undertake
+                the perilous two-day journey blindfolded.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/IzEsKHQq3Fg"
+                frameborder="0"
+              ></iframe>
+            </div>
+
+            <p class="p1">Comedy</p>
+          </div>
+          <div id="card" class="card8" onclick="ASV()">
+            <div id="ASV" class="con1">
+              <p class="conp1">A silent voice (2016)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('ASV'))"
+              >
+                X
+              </button>
+              <a href="ASV.html" class="watchlink">Watch</a>
+              <p class="con1des">
+                a school bully, and Shoko Nishimiya, a young girl with a hearing
+                disability. Their story begins in sixth grade when Shoko
+                transfers to Shoya's elementary school and quickly finds herself
+                bullied and isolated due to her hearing disability. Years later,
+                the tables turn, and Shoya finds himself the victim. "A Silent
+                Voice" depicts the struggles and challenges of adolescence
+                alongside coming-of-age outside the norm.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/nfK6UgLra7g"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <p class="p1">Drama</p>
+          </div>
+          <div id="card" class="card9" onclick="FM()">
+            <div id="fermat" class="con1">
+              <p class="conp1">Fermat's Room (2007)</p>
+              <button
+                id="closebutton"
+                onclick="highlight(document.getElementById('fermat'))"
+              >
+                X
+              </button>
+              <a href="fermat.html" class="watchlink">Watch</a>
+              <p class="con1des">
+                4 mathematicians are invited to solve an enigma. Once there,
+                they're locked in a mechanically shrinking room and given 1
+                minute to solve each puzzle via cellphone while also figuring
+                out why they're there.
+              </p>
+              <iframe
+                id="vid1"
+                class="vid"
+                allowfullscreen="0"
+                src="https://www.youtube.com/embed/meE5fqX61KA"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <p class="p1">mathematical</p>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+    <footer class="footerrr"><div style="padding:0;height: 80%;display: flex;align-items: flex-end; justify-content: center;">
+      <div style="display: flex; justify-content: space-evenly; width: 200px;
+      "><a target="_blank" href="https://www.instagram.com/joincoded/"><img  style="border-radius: 50%;  width: 50px;height: 50px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"/></a>
+      <a target="_blank" href="https://twitter.com/joincoded?lang=ar"><img  style="border-radius: 50%;  width: 50px;height: 50px;"src="https://i0.wp.com/www.petzi.com/wp-content/uploads/2016/04/twitter-icon-hover.jpg?fit=450%2C450&ssl=1"/></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCEQ52yFsXoK9pJu8Fky6yDg"><img  style="border-radius: 50%;  width: 50px;height: 50px;"src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png"/></a></div></div>
+      <p style="width: 100%;height: 10%;; text-align: center; margin-left:  auto ;margin-right: auto;">copyright © Nancy.inc</p>
+    </footer>
+    <script>
+      function highlight(obj) {
+        var orig = obj.style.visibility;
+        obj.style.visibility = "hidden";
+        setTimeout(function () {
+          obj.style.visibility = orig;
+        }, 500);
+      }
+
+      let width = window.width;
+
+
+
+window.addEventListener("resize", function () {
+  if (width < 780){
+    document.getElementById("card").style.height = "50%"
+  }
+}) 
+
+
+      function detail() {
+        window.open("./details.html", "_self");
+      }
+      function aladdin() {
+        window.open("./details copy.html", "_self");
+      }
+      function joker() {
+        window.open("./details copy 2.html", "_self");
+      }
+      function BM() {
+        window.open("./details copy 3.html", "_self");
+      }
+      function OP() {
+        window.open("./details copy 4.html", "_self");
+      }
+      function nemo() {
+        window.open("./details copy 5.html", "_self");
+      }
+      function NATM() {
+        window.open("./details copy 6.html", "_self");
+      }
+      function ASV() {
+        window.open("./details copy 7.html", "_self");
+      }
+      function FM() {
+        window.open("./details copy 8.html", "_self");
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

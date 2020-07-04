@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(52, 69, 70);
+  background: linear-gradient(rgba(41, 41, 41, 0.84), rgba(42, 42, 42, 0.84)),
+    url("assets/images/background.jpg");
+  background-size: 100%;
+
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+.blm {
+  width: 100%;
+  height: 50%;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+.carousel-item img {
+  height: 700px;
+  /* position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0; */
+}
+
+.caromovies {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.191);
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footerrr {
+  width: 100%;
+  height: 30%;
+  background-color: rgba(46, 56, 49, 0.657);
+  position: relative;
+
+  margin-top: 14px;
+}
+.footerrr p {
+  color: aliceblue;
+  position: absolute;
+  bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-item {
+    height: 240px;
+  }
+
+  .carousel-item img {
+    height: 240px;
+    /* position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0; */
+  }
+  .blm {
+    height: 240px;
+  }
+}

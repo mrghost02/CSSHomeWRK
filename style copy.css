@@ -1,0 +1,345 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(52, 69, 70);
+  background: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84)),
+    url("assets/images/background.jpg");
+  background-size: 100%;
+
+  background-repeat: round;
+  background-attachment: fixed;
+  position: relative;
+}
+/* .back {
+  background-color: rgba(255, 255, 255, 0.479);
+  height: 85vh;
+  width: 95vh;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 7px 7px 7px rgba(83, 82, 82, 0.637);
+  bor
+} */
+
+.dropdown-item:hover {
+  background-color: rgba(52, 69, 70, 0.534);
+}
+
+.container {
+  height: 80vh;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.294);
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 0 100px 20px rgba(241, 241, 241, 0.5);
+  border-radius: 70px;
+}
+
+.bar {
+  width: 80%;
+  height: 25%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+#card {
+  height: 100%;
+  width: 20%;
+
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  transition: all ease-in 0.3s;
+  box-shadow: 7px 7px 7px 7px rgba(83, 82, 82, 0.637);
+}
+#card:hover {
+  transform: scale(1.1);
+  transform: translateX(-80px);
+}
+
+.card1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/b/b9/Bird_Box_2014_book_cover.jpg");
+}
+.card2 {
+  position: relative;
+
+  z-index: 1;
+  background-image: url("https://i.pinimg.com/originals/c6/8c/c7/c68cc7803699655014b449ef2407dac8.jpg");
+  height: 100%;
+  width: 20%;
+
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+.card3 {
+  background-image: url("https://resizing.flixster.com/gdjXXScyN7ZaDUVpSgoGxIwjSd4=/fit-in/200x296.2962962962963/v1.bTsxMzE2OTg4NjtqOzE4NTEyOzEyMDA7Mjc2NDs0MDk2");
+}
+.card4 {
+  background-image: url("https://resizing.flixster.com/jdQ8BJYJWiljOA22T5bj6c4evoM=/206x305/v1.bTsxMTYxNDIzMztqOzE4NTM5OzEyMDA7Nzk4OzEwNjQ");
+}
+.card5 {
+  background-image: url("https://resizing.flixster.com/jndcBJs_VPl1v6N0V02FVp7-jOM=/206x305/v1.bTsxMzIyMjAxNDtqOzE4NTEzOzEyMDA7NDAwOzYwMA");
+}
+.card6 {
+  background-image: url("assets/images/nemo.jpg");
+}
+.card7 {
+  background-image: url("https://resizing.flixster.com/wDBwz5gBd0lJgEq9PvP2Salbbq0=/206x305/v1.bTsxMTE4MTE0NDtqOzE4NTM0OzEyMDA7ODAwOzEyMDA");
+}
+.card8 {
+  background-image: url("https://resizing.flixster.com/PIcG8sjHXK3XRoOFPgOK8mZytFA=/fit-in/200x296.2962962962963/v1.bTsxMjUwMjQ0ODtqOzE4NDU5OzEyMDA7ODE3NTsxMTc3NQ");
+}
+.card9 {
+  background-image: url("https://resizing.flixster.com/hP1VtAWvRMURCOP6enpk4SUSXlc=/206x305/v1.bTsxMTIxNTMzNTtqOzE4NTM0OzEyMDA7MTUwNjsyMDA4");
+}
+
+#closebutton {
+  width: 15%;
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-weight: bolder;
+}
+#closebutton:hover {
+  background-color: rgba(241, 241, 241, 0.698);
+}
+
+.p1 {
+  background-color: rgba(56, 56, 56, 0.691);
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 0;
+  text-align: center;
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+  user-select: none;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#card:hover > .p1 {
+  display: inline;
+}
+
+.vid {
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  max-height: fit-content;
+  width: 88.91%;
+  height: 36.363%;
+}
+
+.con1 {
+  /* background-color: rgba(0, 90, 90, 0.924); */
+
+  width: 337.9%;
+  height: 297.07%;
+  border-radius: 10px;
+  position: absolute;
+  left: 100%;
+  /* visibility: hidden; */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#birdbox {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://upload.wikimedia.org/wikipedia/en/b/b9/Bird_Box_2014_book_cover.jpg");
+  background-size: 100%;
+  visibility: hidden;
+}
+#aladdin {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://i.pinimg.com/originals/c6/8c/c7/c68cc7803699655014b449ef2407dac8.jpg");
+  background-size: 100%;
+  visibility: hidden;
+}
+#joker {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://resizing.flixster.com/gdjXXScyN7ZaDUVpSgoGxIwjSd4=/fit-in/200x296.2962962962963/v1.bTsxMzE2OTg4NjtqOzE4NTEyOzEyMDA7Mjc2NDs0MDk2");
+  background-size: 100%;
+  visibility: hidden;
+}
+#BM {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://resizing.flixster.com/jdQ8BJYJWiljOA22T5bj6c4evoM=/206x305/v1.bTsxMTYxNDIzMztqOzE4NTM5OzEyMDA7Nzk4OzEwNjQ");
+  background-size: 100%;
+  visibility: hidden;
+}
+#onepiece {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://resizing.flixster.com/jndcBJs_VPl1v6N0V02FVp7-jOM=/206x305/v1.bTsxMzIyMjAxNDtqOzE4NTEzOzEyMDA7NDAwOzYwMA");
+  background-size: 100%;
+  visibility: hidden;
+}
+#nemo {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("assets/images/nemo.jpg");
+  background-size: 100%;
+  visibility: hidden;
+}
+#NATM {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://resizing.flixster.com/wDBwz5gBd0lJgEq9PvP2Salbbq0=/206x305/v1.bTsxMTE4MTE0NDtqOzE4NTM0OzEyMDA7ODAwOzEyMDA");
+  background-size: 100%;
+  visibility: hidden;
+  bottom: 0;
+}
+#ASV {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://resizing.flixster.com/PIcG8sjHXK3XRoOFPgOK8mZytFA=/fit-in/200x296.2962962962963/v1.bTsxMjUwMjQ0ODtqOzE4NDU5OzEyMDA7ODE3NTsxMTc3NQ");
+  background-size: 100%;
+  visibility: hidden;
+  bottom: 0;
+}
+#fermat {
+  background: linear-gradient(rgba(0, 0, 0, 0.554), rgba(0, 0, 0, 0.561)),
+    url("https://resizing.flixster.com/hP1VtAWvRMURCOP6enpk4SUSXlc=/206x305/v1.bTsxMTIxNTMzNTtqOzE4NTM0OzEyMDA7MTUwNjsyMDA4");
+  background-size: 100%;
+  visibility: hidden;
+  bottom: 0;
+}
+
+.conp1 {
+  width: 40%;
+  /* height: 16.866%; */
+  font-weight: bold;
+  margin: auto;
+  font-size: xx-large;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.561);
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  display: inline-block;
+  font-size: 1.5vw;
+}
+.con1des {
+  width: 95.554%;
+  height: auto;
+  padding: 10px;
+  background-color: rgba(240, 248, 255, 0.561);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 510;
+  font-size: 0.85vw;
+}
+#card:hover > .con1 {
+  visibility: visible;
+  animation-name: forcards;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+#card:hover {
+  z-index: 2;
+}
+
+.watchlink {
+  width: 14.98%;
+  height: 8%;
+  background-color: rgb(172, 44, 72);
+  margin: auto;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 0.85vw;
+  text-align: center;
+}
+
+.watchlink:hover {
+  background-color: rgb(231, 122, 122);
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+
+@keyframes forcards {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.footerrr {
+  width: 100%;
+  height: 30%;
+  background-color: rgba(46, 56, 49, 0.657);
+  position: relative;
+
+  margin-top: 10%;
+}
+.footerrr p {
+  color: aliceblue;
+  position: absolute;
+  bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .bar {
+    height: 100%;
+    width: 200px;
+
+    flex-direction: column;
+  }
+  #card {
+    width: 40vw;
+    height: 28vh;
+  }
+  .container {
+    margin: auto;
+    overflow: scroll;
+    justify-content: center;
+    width: fit-content;
+  }
+  .footerrr {
+    bottom: 0;
+    height: 20%;
+  }
+  body {
+    height: 100vh;
+  }
+  .con1 {
+    height: 150px;
+  }
+}
